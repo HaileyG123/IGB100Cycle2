@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PressButton : MonoBehaviour
 {
-    bool buttonPressed = false;
+    private bool buttonPressed = false;
     public GameObject door;
     
     // Start is called before the first frame update
