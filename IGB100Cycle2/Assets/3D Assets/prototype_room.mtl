@@ -1,0 +1,22 @@
+# Blender 3.5.0 MTL File: 'prototype_room.blend'
+# www.blender.org
+
+newmtl carpet
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 0.000000
+d 1.000000
+illum 1
+map_Kd -s 50 50 50 C:/Users/paige/OneDrive/Desktop/carpet.png
+
+newmtl wall
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.597201 0.651405 0.597202
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 0.000000
+d 1.000000
+illum 1
