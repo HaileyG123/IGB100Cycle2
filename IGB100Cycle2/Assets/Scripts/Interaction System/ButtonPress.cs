@@ -17,6 +17,8 @@ public class ButtonPress : MonoBehaviour, IInteractable
     public Renderer cubeRenderer;
     public GameObject cube;
     public Color newColor;
+    public Color oldColour;
+    public bool changed;
     private int colorValue;
     
     // Start is called before the first frame update
@@ -34,6 +36,16 @@ public class ButtonPress : MonoBehaviour, IInteractable
     public void ChangeMaterial() 
     {
         Debug.Log("Change button");
-        cubeRenderer.material.color = newColor;
+        if(!changed)
+        {
+            cubeRenderer.material.color = newColor;
+            changed = true;
+        }
+        else
+        {
+            cubeRenderer.material.color = oldColour;
+            changed = false;
+        }
+        
     }
 }
