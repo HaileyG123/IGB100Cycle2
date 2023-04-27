@@ -1,10 +1,13 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour {
-
+public class GameManager : MonoBehaviour
+{
+    private float timeElapsed = 0;
+    private float timeLimit = 5f;
+    
     //Singleton Setup
     public static GameManager instance = null;
 
@@ -29,9 +32,14 @@ public class GameManager : MonoBehaviour {
     void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
-	}
+    // Update is called once per frame
+    void Update()
+    {
+        timeElapsed += Time.deltaTime;
+        if(timeElapsed >= timeLimit)
+        {            
+            SceneManager.LoadScene("Lose");
+        }
+    }
 }
