@@ -38,12 +38,12 @@ public class ButtonPress : MonoBehaviour, IInteractable
         Debug.Log("Change button");
         if(!changed)
         {
-            cubeRenderer.material.color = newColor;
+            cubeRenderer.materials[1].color = newColor;
             changed = true;
         }
         else
         {
-            cubeRenderer.material.color = oldColour;
+            cubeRenderer.materials[1].color = oldColour;
             changed = false;
         }
         
