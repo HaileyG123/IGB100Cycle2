@@ -35,7 +35,7 @@ public class ButtonPress : MonoBehaviour, IInteractable
 
     public void ChangeMaterial() 
     {
-        Debug.Log("Change button");
+        //Debug.Log("Change button");
         if(!changed)
         {
             cubeRenderer.materials[1].color = newColor;
