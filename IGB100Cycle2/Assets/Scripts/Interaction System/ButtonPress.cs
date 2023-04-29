@@ -7,9 +7,13 @@ public class ButtonPress : MonoBehaviour, IInteractable
     [SerializeField] private string _prompt;
     
     public string InteractionPrompt => _prompt;
+    private Animation buttonSet;
+    private AudioSource audio;
     public bool Interact(Interactor interactor)
     {
         Debug.Log("Button Pressed!");
+        buttonSet.Play("press_once");
+        audio.Play(0);
         ChangeMaterial();
         return true;
     }
@@ -24,6 +28,8 @@ public class ButtonPress : MonoBehaviour, IInteractable
     // Start is called before the first frame update
     void Start()
     {
+        audio = GetComponent<AudioSource>();
+        buttonSet = GetComponent<Animation>();
         cubeRenderer = cube.GetComponent<Renderer>();
     }
 
