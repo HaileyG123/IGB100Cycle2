@@ -32,6 +32,8 @@ public class Timer : MonoBehaviour
                 TimeLeft = 0;
                 TimerOn = false;
                 SceneManager.LoadScene("Lose");
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
             }
         }
     }
