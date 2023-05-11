@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class OpenDoor2 : MonoBehaviour
 {
     public GameObject door;
     public GameObject button1;
     public GameObject button2;
+    public GameObject doorOpen;
 
     public bool puzzleSolved;
     
@@ -23,7 +25,14 @@ public class OpenDoor2 : MonoBehaviour
         {
             puzzleSolved = true;
             Destroy(door);
-            Debug.Log("Door opens");
+            StartCoroutine(DoorOpen());
         }
+    }
+
+    private IEnumerator DoorOpen()
+    {
+        doorOpen.SetActive(true);
+        yield return new WaitForSeconds(3);
+        doorOpen.SetActive(false);
     }
 }
