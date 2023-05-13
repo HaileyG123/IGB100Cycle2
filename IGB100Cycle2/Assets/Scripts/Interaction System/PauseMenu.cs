@@ -7,25 +7,28 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
+    public GameObject crosshair;
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown("p"))
+        if(Input.GetKeyDown(KeyCode.Escape))
         {
             if(GameIsPaused)
             {
-                Resume();
+                Resume();                
             }
             else
             {
                 Pause();
+                crosshair.SetActive(false);
             }
         }
     }
 
     public void Resume()
     {
+        crosshair.SetActive(true);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         pauseMenuUI.SetActive(false);
