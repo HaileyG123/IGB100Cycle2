@@ -956,7 +956,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 354840542}
   m_LocalRotation: {x: -0, y: 0.8069156, z: -0, w: 0.59066683}
-  m_LocalPosition: {x: -1, y: 4, z: -16}
+  m_LocalPosition: {x: -1, y: 1, z: 3}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children:
   - {fileID: 537518452}
@@ -2132,7 +2132,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.1500006, y: 0.16999984}
+  m_AnchoredPosition: {x: 1.26, y: 0.76}
   m_SizeDelta: {x: 3.267, y: 2.5437}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &754094493
@@ -4398,7 +4398,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.1500006, y: 0.16999984}
+  m_AnchoredPosition: {x: 1.24, y: 0.67}
   m_SizeDelta: {x: 3.267, y: 2.5437}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1752075135
@@ -5850,7 +5850,7 @@ MonoBehaviour:
   m_text: "The cube is a \ngood platform"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9e205bcb80257004993e204ee8136189, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 8556068792738998786, guid: 9e205bcb80257004993e204ee8136189, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
