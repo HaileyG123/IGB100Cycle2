@@ -14,7 +14,7 @@ public class Timer : MonoBehaviour
     void Start()
     {
         TimerOn = true;
-    }
+    }    
 
     // Update is called once per frame
     void Update()
