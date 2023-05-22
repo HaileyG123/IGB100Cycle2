@@ -33,13 +33,13 @@ public class OpenDoorL2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(buttonC.GetComponent<ButtonPress>().changed && !puzzleSolved)
+        if(buttonB.GetComponent<ButtonPress>().changed && !puzzleSolved)
         {
             puzzleSolved = true;
             Destroy(door);
             StartCoroutine(DoorOpen());
         }
-        else if (buttonB.GetComponent<ButtonPress>().changed || buttonA.GetComponent<ButtonPress>().changed 
+        else if (buttonC.GetComponent<ButtonPress>().changed || buttonA.GetComponent<ButtonPress>().changed 
         || buttonD.GetComponent<ButtonPress>().changed)
         {
             Fall();
