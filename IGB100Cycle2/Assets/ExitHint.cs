@@ -5,6 +5,7 @@ using UnityEngine;
 public class ExitHint : MonoBehaviour
 {
     public GameObject hint;
+    public GameObject crosshair;
     
     // Start is called before the first frame update
     void Start()
@@ -24,8 +25,9 @@ public class ExitHint : MonoBehaviour
     public void LeaveUI()
     {
         Debug.Log("click");
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
         hint.SetActive(false);
+        crosshair.SetActive(true);
     }
 }

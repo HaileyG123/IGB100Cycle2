@@ -446,6 +446,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: Press E to Receive Hint
   hint: {fileID: 963598858}
+  crosshair: {fileID: 53195992}
 --- !u!1 &275822016
 GameObject:
   m_ObjectHideFlags: 0
@@ -5378,6 +5379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hint: {fileID: 1012830142}
+  crosshair: {fileID: 0}
 --- !u!114 &1896617900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6233,6 +6235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hint: {fileID: 963598858}
+  crosshair: {fileID: 53195992}
 --- !u!114 &2030413904
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7,6 +7,7 @@ public class GetHint : MonoBehaviour, IInteractable
     [SerializeField] private string _prompt;
 
     public GameObject hint;
+    public GameObject crosshair;
     
     public string InteractionPrompt => _prompt;
     public bool Interact(Interactor interactor)
@@ -31,7 +32,8 @@ public class GetHint : MonoBehaviour, IInteractable
     void GiveHint()
     {
         hint.SetActive(true);
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
+        crosshair.SetActive(false);
+        //Cursor.visible = true;
+        //Cursor.lockState = CursorLockMode.None;
     }
 }

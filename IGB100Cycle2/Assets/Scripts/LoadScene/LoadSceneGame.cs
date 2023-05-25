@@ -48,4 +48,9 @@ public class LoadSceneGame : MonoBehaviour
     {
         SceneManager.LoadScene("Win");
     }
+
+    public void Level2()
+    {
+        SceneManager.LoadScene("Level2");
+    }
 }
