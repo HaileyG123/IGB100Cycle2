@@ -15,7 +15,10 @@ public class ExitHint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //LeaveUI();
+        if(Input.GetKeyDown("x")) 
+        {
+            LeaveUI();
+        }
     }
 
     public void LeaveUI()
