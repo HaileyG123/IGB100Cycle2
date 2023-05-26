@@ -22778,7 +22778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a410ad25a96e1841a455bd89acb95f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: Win
+  nextScene: Level3
   _prompt: Press E to Leave Floor
 --- !u!65 &2031100970
 BoxCollider:

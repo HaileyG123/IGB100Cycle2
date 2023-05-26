@@ -37,7 +37,7 @@ public class Kill : MonoBehaviour
             Debug.Log("Level reset");            
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             room.GetComponent<Collider>().enabled = true;
-            player.transform.position = new Vector3(-55f,20f,-20f);
+            player.transform.position = playPos.transform.position;
         }
     }
 }
