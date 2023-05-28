@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ButtonPress : MonoBehaviour, IInteractable
 {
-    [SerializeField] private string _prompt;
+    [SerializeField] private string _prompt;    
     
     public string InteractionPrompt => _prompt;
     private Animation buttonSet;
@@ -15,6 +15,16 @@ public class ButtonPress : MonoBehaviour, IInteractable
         buttonSet.Play("press_once");
         audio.Play(0);
         ChangeMaterial();
+        if(inPattern && gameManager != null) 
+        {
+            gameManager.GetComponent<OpenDoorR5>().index += 1;
+        }
+        else if(!inPattern && gameManager != null)
+        {
+            gameManager.GetComponent<OpenDoorR5>().index = 0;
+            gameManager.GetComponent<OpenDoorR5>().Reset();
+        }
+
         return true;
     }
 
@@ -24,6 +34,11 @@ public class ButtonPress : MonoBehaviour, IInteractable
     public Color oldColour;
     public bool changed;
     private int colorValue;
+
+    public bool inPattern;
+    public bool room5;
+    public GameObject gameManager;
+    public bool pat2;
     
     // Start is called before the first frame update
     void Start()
