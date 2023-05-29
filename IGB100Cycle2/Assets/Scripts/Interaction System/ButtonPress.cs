@@ -12,8 +12,9 @@ public class ButtonPress : MonoBehaviour, IInteractable
     public bool Interact(Interactor interactor)
     {
         Debug.Log("Button Pressed!");
-        buttonSet.Play("press_once");
+        buttonSet.Play("PressHold");
         audio.Play(0);
+        buttonSet.Play("PressRelease");
         ChangeMaterial();
         if(inPattern && gameManager != null) 
         {
