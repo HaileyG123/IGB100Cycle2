@@ -5,7 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Kill2 : MonoBehaviour
 {
-     public string scene;
+    public string scene;
+
+    public GameObject killUI;
+    public bool GameIsPaused;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,8 +25,18 @@ public class Kill2 : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("Level reset");            
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Debug.Log("Level reset");   
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            killUI.SetActive(true);
+            Time.timeScale = 0f;
+            GameIsPaused = true;         
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

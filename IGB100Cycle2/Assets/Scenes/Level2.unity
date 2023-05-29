@@ -2473,6 +2473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 866464686}
   crosshair: {fileID: 500468339}
+  timer: {fileID: 1732269067}
 --- !u!114 &231587113
 MonoBehaviour:
   m_ObjectHideFlags: 0
