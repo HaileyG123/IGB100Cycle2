@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Kill : MonoBehaviour
 {
     public string scene;
-    public GameObject myTimer;
+    //public GameObject myTimer;
 
     private Transform playPos;
     public GameObject playerEmpty;
@@ -17,12 +17,7 @@ public class Kill : MonoBehaviour
     void Start()
     {
         playPos = playerEmpty.GetComponent<Transform>();
-    }
-
-    void Awake() 
-    {
-        DontDestroyOnLoad(myTimer);
-    }
+    }   
 
     // Update is called once per frame
     void Update()

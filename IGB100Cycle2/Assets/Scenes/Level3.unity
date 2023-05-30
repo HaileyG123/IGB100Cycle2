@@ -8370,6 +8370,64 @@ MonoBehaviour:
   wrongButton: {fileID: 2107346931}
   puzzleSolved: 0
   room5Solved: 0
+--- !u!1 &1658054667
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1658054670}
+  - component: {fileID: 1658054669}
+  - component: {fileID: 1658054668}
+  m_Layer: 0
+  m_Name: STOPKILL
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1658054668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658054667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9987c449a6655f140aff8c20783663c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kill: {fileID: 1806740985}
+--- !u!65 &1658054669
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658054667}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.09, y: 2.91, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1658054670
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658054667}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -84.9, y: 3.52, z: 30.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1673786871
 GameObject:
   m_ObjectHideFlags: 0
@@ -9417,7 +9475,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "I LIKE TO COUNT. \nI START OFF FROM 7."
+  m_text: "I LIKE TO COUNT \nA LITTLE ODD.\nLET'S START OFF FROM 7."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9e205bcb80257004993e204ee8136189, type: 2}
   m_sharedMaterial: {fileID: 8556068792738998786, guid: 9e205bcb80257004993e204ee8136189, type: 2}
