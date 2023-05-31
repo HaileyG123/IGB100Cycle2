@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class RestartButton : MonoBehaviour, IInteractable
 {
     [SerializeField] private string _prompt;
+    public string scene;
     
     public string InteractionPrompt => _prompt;
     private Animation buttonSet;
@@ -34,6 +35,6 @@ public class RestartButton : MonoBehaviour, IInteractable
 
     public void RestartLevel() 
     {
-        SceneManager.LoadScene("Hailey Programmer");         
+        SceneManager.LoadScene(scene);         
     }
 }
