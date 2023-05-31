@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Button
   - CinemachineTarget
+  - GameMusic
   layers:
   - Default
   - TransparentFX

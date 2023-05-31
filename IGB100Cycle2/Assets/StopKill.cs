@@ -22,6 +22,7 @@ public class StopKill : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Destroy(kill);
+            Debug.Log("No Kill");
         }
     }
 }
