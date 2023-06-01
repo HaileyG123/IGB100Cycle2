@@ -20,7 +20,7 @@ public class LoadSceneGame : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("Hailey Programmer");        
+        SceneManager.LoadScene("Level1");        
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }

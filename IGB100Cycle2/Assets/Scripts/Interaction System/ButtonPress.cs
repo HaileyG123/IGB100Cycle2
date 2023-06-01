@@ -8,12 +8,16 @@ public class ButtonPress : MonoBehaviour, IInteractable
     
     public string InteractionPrompt => _prompt;
     private Animation buttonSet;
+    //public GameObject number;
+   // private Animator numberAnimation;
+    
     private AudioSource audio;
     public bool Interact(Interactor interactor)
     {
         Debug.Log("Button Pressed!");
         buttonSet.Play("PressHold");
         audio.Play(0);
+        //numberAnimation.SetTrigger("New Trigger");
         buttonSet.Play("PressRelease");
         ChangeMaterial();
         if(inPattern && gameManager != null) 
@@ -47,6 +51,8 @@ public class ButtonPress : MonoBehaviour, IInteractable
         audio = GetComponent<AudioSource>();
         buttonSet = GetComponent<Animation>();
         cubeRenderer = cube.GetComponent<Renderer>();
+        //numberAnimation = number.GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame

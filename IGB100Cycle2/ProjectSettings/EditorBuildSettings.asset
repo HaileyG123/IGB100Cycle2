@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Title.unity
     guid: f3a7a42b3e8e82f4a8b67512af6a018d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Hailey Programmer.unity
     guid: e6843a6b5809af1479d0509e1a4a70a7
   - enabled: 1
@@ -29,5 +29,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level3.unity
     guid: e49c1fa90e0985d4a9f0fc79ffe185f3
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: dca15287b58cf6c4d9cbb724056f30e4
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
