@@ -218,6 +218,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5509041079147038991, guid: 225f76a99494f3c4ca3d8cfcb0903bd4, type: 3}
+      propertyPath: m_RootBone
+      value: 
+      objectReference: {fileID: 1963590370}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 225f76a99494f3c4ca3d8cfcb0903bd4, type: 3}
 --- !u!1001 &12174935
@@ -340,8 +344,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prompt: Press E to Interact
-  cubeRenderer: {fileID: 0}
-  cube: {fileID: 0}
+  cubeRenderer: {fileID: 394906081}
+  cube: {fileID: 394906079}
   newColor: {r: 0.0039215684, g: 1, b: 0.060058657, a: 0}
   oldColour: {r: 0.32941177, g: 0.8705883, b: 0.96470594, a: 0}
   changed: 0
@@ -358,9 +362,10 @@ Animation:
   m_GameObject: {fileID: 12174936}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 4439744583481904711, guid: 1c53f234ca258e04dbf6e80374356b46, type: 3}
+  m_Animation: {fileID: 0}
   m_Animations:
-  - {fileID: 4439744583481904711, guid: 1c53f234ca258e04dbf6e80374356b46, type: 3}
+  - {fileID: 4183856398752381346, guid: 225f76a99494f3c4ca3d8cfcb0903bd4, type: 3}
+  - {fileID: -8856905198475494533, guid: 225f76a99494f3c4ca3d8cfcb0903bd4, type: 3}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -3408,6 +3413,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377709752}
   m_CullTransparentMesh: 1
+--- !u!1 &394906079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7020099622256699208, guid: 225f76a99494f3c4ca3d8cfcb0903bd4, type: 3}
+  m_PrefabInstance: {fileID: 12174935}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &394906081 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5509041079147038991, guid: 225f76a99494f3c4ca3d8cfcb0903bd4, type: 3}
+  m_PrefabInstance: {fileID: 12174935}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &415073873
 GameObject:
   m_ObjectHideFlags: 0
@@ -13997,9 +14012,10 @@ Animation:
   m_GameObject: {fileID: 1807698491}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 4439744583481904711, guid: 1c53f234ca258e04dbf6e80374356b46, type: 3}
+  m_Animation: {fileID: 0}
   m_Animations:
-  - {fileID: 4439744583481904711, guid: 1c53f234ca258e04dbf6e80374356b46, type: 3}
+  - {fileID: 4183856398752381346, guid: 225f76a99494f3c4ca3d8cfcb0903bd4, type: 3}
+  - {fileID: -8856905198475494533, guid: 225f76a99494f3c4ca3d8cfcb0903bd4, type: 3}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -15989,6 +16005,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1963590370 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2443644006053805615, guid: 225f76a99494f3c4ca3d8cfcb0903bd4, type: 3}
+  m_PrefabInstance: {fileID: 10231353}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1998514613
 GameObject:
   m_ObjectHideFlags: 0
