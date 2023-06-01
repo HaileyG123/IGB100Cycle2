@@ -14,6 +14,7 @@ public class Timer : MonoBehaviour
     void Start()
     {
         TimerOn = true;
+        //TimerText = GameObject.Find("Text (TMP)");
     }    
 
     // Update is called once per frame
