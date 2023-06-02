@@ -20,7 +20,7 @@ public class LoadSceneGame : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("Level1");        
+        SceneManager.LoadScene("Level_1");        
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -52,11 +52,11 @@ public class LoadSceneGame : MonoBehaviour
 
     public void Level2()
     {
-        SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene("Level_2");
     }
 
     public void Level3()
     {
-        SceneManager.LoadScene("Level3");
+        SceneManager.LoadScene("Level_3");
     }
 }
