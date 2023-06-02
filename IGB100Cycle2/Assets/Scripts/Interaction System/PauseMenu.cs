@@ -23,7 +23,10 @@ public class PauseMenu : MonoBehaviour
             {
                 Pause();
                 crosshair.SetActive(false);
-                timer.SetActive(false);
+                if(timer != null) 
+                {
+                    timer.SetActive(false);
+                }                
             }
         }
     }
@@ -31,7 +34,10 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         crosshair.SetActive(true);
-        timer.SetActive(true);
+        if(timer != null) 
+        {
+            timer.SetActive(true);
+        }
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         pauseMenuUI.SetActive(false);

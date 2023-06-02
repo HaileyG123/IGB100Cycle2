@@ -16,7 +16,7 @@ public class OpenDoorR6 : MonoBehaviour
     public GameObject button8;
     public GameObject button7;
     public GameObject button11;
-    public GameObject button12;
+    //public GameObject button12;
 
     private List<GameObject> wrongButtons = new List<GameObject>();
 
@@ -38,7 +38,7 @@ public class OpenDoorR6 : MonoBehaviour
         wrongButtons.Add(button9);
         wrongButtons.Add(button10);
         wrongButtons.Add(button11);
-        wrongButtons.Add(button12);
+        //wrongButtons.Add(button12);
     }
 
     // Update is called once per frame
