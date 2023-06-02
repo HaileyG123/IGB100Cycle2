@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
 {
     public float TimeLeft;
     public bool TimerOn = false;
+    public string scene;
 
     public Text TimerText;
     // Start is called before the first frame update
@@ -32,7 +33,7 @@ public class Timer : MonoBehaviour
                 Debug.Log("Time is up!");
                 TimeLeft = 0;
                 TimerOn = false;
-                SceneManager.LoadScene("Lose");
+                SceneManager.LoadScene(scene);
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
             }
