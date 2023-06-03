@@ -1166,6 +1166,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: door
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ae89934e43dd30045a647bf2863520c9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: ae89934e43dd30045a647bf2863520c9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae89934e43dd30045a647bf2863520c9, type: 3}
 --- !u!1 &173684179
@@ -8146,7 +8154,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963020715}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0.75}
+  m_LocalPosition: {x: 0, y: 0, z: 0.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1216177707}
@@ -24933,6 +24941,10 @@ PrefabInstance:
     - target: {fileID: 3020855162913362498, guid: efa0882198ec87e489d78304c61d8575, type: 3}
       propertyPath: m_Name
       value: door_next
+      objectReference: {fileID: 0}
+    - target: {fileID: 3020855162913362498, guid: efa0882198ec87e489d78304c61d8575, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3020855162913362498, guid: efa0882198ec87e489d78304c61d8575, type: 3}
       propertyPath: m_IsActive
